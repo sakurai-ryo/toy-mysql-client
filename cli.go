@@ -23,10 +23,6 @@ var rootCmd = &cobra.Command{
 
 		slog.Info("args: ", "user", user, "password", password)
 
-		if err := Client(); err != nil {
-			return err
-		}
-
 		return nil
 	},
 }
